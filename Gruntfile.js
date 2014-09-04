@@ -43,15 +43,26 @@ module.exports = function(grunt) {
 					'css/main.css': 'scss/main.scss'
 				}
 			}
-		}
+		},
+		connect: {
+		 	server: {
+		 		options : {
+		 			open: true,
+		 			hostname: 'localhost',
+					//keepalive: true,
+					port: 3000
+		 		}
+		 	}
+		 }
 	});
 
 	// Load the plugin that provides the "uglify" task.
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-sass');
 
 	// Default task(s).
-	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('default', ['connect', 'watch']);
 
 }
