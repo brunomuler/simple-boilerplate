@@ -1,0 +1,89 @@
+// *************************************
+//
+//   Variables
+//   -> Project variables
+//
+// *************************************
+
+// -------------------------------------
+//   Breakpoints
+// -------------------------------------
+
+$break-small: 30em; //480px
+$break-small2: 37.5em; //600px
+$break-medium: 48em; //768px
+$break-medium2: 57.5em; //920px
+$break-large: 64em; //1024px
+$break-xtra-large: 80em; //1280px
+
+$break-s: $break-small;
+$break-s2: $break-small2;
+$break-m: $break-medium;
+$break-m2: $break-medium2;
+$break-l: $break-large;
+$break-xl: $break-xtra-large;
+
+
+
+
+// -------------------------------------
+//   Color
+// -------------------------------------
+
+// ----- Declarative names ----- //
+
+//Brand colors
+$light-blue: #30ace2;
+$dark-blue: #2b465d;
+$yellow: #f5c300;
+$pink: #ff2960;
+
+// ----- Semantic names (call those on the project) ----- //
+
+$main-color-1: $light-blue;
+$main-color-2: $dark-blue;
+$main-color-3: $yellow;
+
+$secondary-color-1: $pink;
+
+
+//TO DO - define a better lighten/darken approach to colors
+$darken-main-color-1: darken($main-color-1, 18%);
+$darken-main-color-2: darken($main-color-2, 8%);
+$darken-main-color-3: darken($main-color-3, 8%);
+
+
+
+$warning-color: #c43434;
+$alert-color: #dfd213;
+$success-color: #2dc428;
+
+
+
+// ----- Greyscale -----
+
+$white: #fff;
+$grey-95: hsl(0, 0, 95%);
+$grey-90: hsl(0, 0, 90%);
+$grey-30: hsl(0, 0, 30%);
+
+
+
+
+
+
+// -------------------------------------
+//   Typography
+// -------------------------------------
+
+// ----- Declarative names ----- //
+
+$roboto-slab: 'Roboto Slab', sans-serif;
+$helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+
+
+
+// ----- Semantic names (call those on the project) ----- //
+
+$main-typeface: $roboto-slab;
+$secondary-typeface: $helvetica;

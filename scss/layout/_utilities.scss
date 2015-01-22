@@ -1,0 +1,25 @@
+// *************************************
+//
+//   Utility styles
+//
+// *************************************
+
+.u-alignLeft {
+  text-align: left;
+}
+
+.u-alignRight {
+  text-align: left;
+}
+
+
+.u-relative {
+  position: relative;
+}
+
+
+.u-inlineBlock {
+  > li { 
+    display: inline-block;
+  }
+}
