@@ -21,11 +21,8 @@ module.exports = function(grunt) {
 				}
 			},
 			sass: {
-				files: 'scss/**/*.scss',
-				tasks: 'sass',
-				options: {
-					livereload: reloadPort
-				}
+				files : ['scss/{,*/}*.scss'],
+	            tasks: ['sass:dev']
 			}
 		},
 
