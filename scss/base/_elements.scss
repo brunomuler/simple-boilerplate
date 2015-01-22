@@ -1,0 +1,138 @@
+// *************************************
+//
+//   Elements
+//   -> Default styles for basic HTML elements
+//
+// *************************************
+
+// -------------------------------------
+//   Custom resets
+// -------------------------------------
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, cite {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+em {
+  font-style: normal;
+}
+
+
+
+
+// -------------------------------------
+//   Basic element styling
+// -------------------------------------
+
+// ----- Document ----- //
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font: 100%/1.375 $main-typeface;
+}
+
+
+
+
+// ----- Media ----- //
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+
+
+// ----- Typography ----- //
+
+p, a, li, h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25em;
+}
+
+p {
+  font-size: 15px;
+  padding: spacing(.5) 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  @include font-size(42);
+}
+
+h2 {
+  @include font-size(36);
+}
+
+h3 {
+  @include font-size(30);
+}
+
+h4 {
+  @include font-size(20);
+}
+
+h5 {
+  @include font-size(18);
+}
+
+h6 {
+  @include font-size(16);
+}
+
+
+
+
+// -------------------------------------
+//   Custom placeholder color (inputs)
+// -------------------------------------
+
+//::-webkit-input-placeholder { color: #fff; }
+//:-moz-placeholder           { color: #fff; }
+//::-moz-placeholder          { color: #fff; }
+//:-ms-input-placeholder      { color: #fff; }
+
+
+
+
+
+
+// -------------------------------------
+//   Custom scrollbar
+// -------------------------------------
+
+//http://css-tricks.com/custom-scrollbars-in-webkit/
+//http://codemug.com/html/custom-scrollbars-using-css/

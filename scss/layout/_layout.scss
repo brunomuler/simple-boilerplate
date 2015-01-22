@@ -1,0 +1,151 @@
+// *************************************
+//
+//   Layout styles
+//
+// *************************************
+
+// -------------------------------------
+//   Container
+// -------------------------------------
+
+.l-container {
+  position: relative;
+  width: 94%;
+  margin: 0 auto;
+  
+  @media screen and (min-width: $break-xl) {
+    width: 1186px;
+  }
+}
+
+
+.l-container-full {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: $break-m2) {
+    width: 94%;
+  }
+  
+  @media screen and (min-width: $break-xl) {
+    width: 1186px;
+  }
+}
+
+
+.l-half-container {
+  width: 94%;
+  margin: 0 auto;
+}
+
+
+
+
+
+// -------------------------------------
+//   Split auto height
+// -------------------------------------
+
+.l-autoHeight {
+  @media screen and (min-width: $break-l) {
+    position: relative;
+
+    .l-autoHeight-left {
+      position: relative;
+      left: 0;
+      margin-right: 50%;
+    }
+
+    .l-autoHeight-right {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      right: 0;
+      left: 50%;
+
+      > section {
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+
+.l-autoHeight--inverted {
+  @media screen and (min-width: $break-l) {
+    position: relative;
+
+    .l-autoHeight-left {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      left: 0;
+      right: 50%;
+
+      > section {
+        height: 100%;
+      }
+    }
+
+    .l-autoHeight-right {
+      position: relative;
+      right: 0;
+      margin-left: 50%;
+    }
+  }
+}
+
+
+
+
+// -------------------------------------
+//   Grid extension
+// -------------------------------------
+
+
+// Starts invisible on mobile
+.display-none {
+  display: none;
+}
+
+
+// Apply these to display
+.s--display {
+  @media screen and (min-width: $break-s) {
+    display: inline-block;
+  }
+}
+
+.s2--display {
+  @media screen and (min-width: $break-s2) {
+    display: inline-block;
+  }
+}
+
+
+.m--display {
+  @media screen and (min-width: $break-m) {
+    display: inline-block;
+  }
+}
+
+
+.m2--display {
+  @media screen and (min-width: $break-m2) {
+    display: inline-block;
+  }
+}
+
+.l--display {
+  @media screen and (min-width: $break-l) {
+    display: inline-block;
+  }
+}
+
+.xl--display {
+  @media screen and (min-width: $break-xl) {
+    display: inline-block;
+  }
+}

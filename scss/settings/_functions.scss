@@ -1,0 +1,15 @@
+// *************************************
+//
+//   Functions
+//
+// *************************************
+
+// -------------------------------------
+//   Spacing function
+//   - to apply consistency to margins and padding on vertical rhythm
+//   - usually applied to 'layout' or 'page'-level files
+// -------------------------------------
+
+@function spacing($multiplier) {
+  @return $multiplier * 12px
+}
