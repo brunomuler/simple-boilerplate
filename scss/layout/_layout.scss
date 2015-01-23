@@ -101,22 +101,23 @@
 
 
 // -------------------------------------
-//   Grid extension
+//   CSSWizardry grids extension
 // -------------------------------------
 
 
-// Starts invisible on mobile
+//Grid item starts invisible on mobile
 .display-none {
   display: none;
 }
 
 
-// Apply these to display
+//Apply these to display
 .s--display {
   @media screen and (min-width: $break-s) {
     display: inline-block;
   }
 }
+
 
 .s2--display {
   @media screen and (min-width: $break-s2) {
@@ -138,11 +139,13 @@
   }
 }
 
+
 .l--display {
   @media screen and (min-width: $break-l) {
     display: inline-block;
   }
 }
+
 
 .xl--display {
   @media screen and (min-width: $break-xl) {
