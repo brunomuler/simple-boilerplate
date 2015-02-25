@@ -85,7 +85,7 @@ $mobile-first:          true!default;
 /**
  * Set the spacing between your grid items.
  */
-$gutter:                spacing(2)!default;
+$gutter:                24!default;
 
 
 /**
@@ -97,8 +97,8 @@ $use-silent-classes:    false!default;
 /**
  * Would you like push and pull classes enabled?
  */
-$push:                  true!default;
-$pull:                  true!default;
+$push:                  false!default;
+$pull:                  false!default;
 
 
 /**
@@ -121,16 +121,6 @@ $use-markup-fix:        false!default;
  * your classes (e.g. `.palm--one-half`), the second value is the media query
  * that the breakpoint fires at.
  */
-
-/*
-$breakpoints: (
-    'palm' '(max-width: 480px)',
-    'lap' '(min-width: 481px) and (max-width: 1023px)',
-    'portable' '(max-width: 1023px)',
-    'desk' '(min-width: 1024px)'
-)!default;
-*/
-
 $breakpoints: (
     's' '(min-width: 30em)', //480px
     's2' '(min-width: 37.5em)', //600px
@@ -140,18 +130,6 @@ $breakpoints: (
     'xl' '(min-width: 80em)', //1280px
     'xxl' '(min-width: 87.5em)' //1280px
 )!default;
-
-/*    
-$breakpoints: (
-    's' '(max-width: 29.938em)', //479px
-    's2' '(min-width: 30em) and (max-width: 37.4375em)', //480px to 599px
-    'm' '(min-width: 37.5em) and (max-width: 47.938em)', //600px to 767px
-    'm2' '(min-width: 48em and (max-width: 56.1875em)', //768px to 899px
-    'l' '(min-width: 56.25) and (max-width: 63.938em)', //768px to 1023px
-    'xl' '(min-width: 64em) and (max-width: 79.938em)', //1024px to 1279px
-    'xxl' '(min-width: 80em)' //1280px
-)!default;
-*/
 
 
 /**
