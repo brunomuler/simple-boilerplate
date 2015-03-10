@@ -47,6 +47,19 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 
 
 // -------------------------------------
+//   SVG with PNG fallback
+// -------------------------------------
+@mixin svg($file) {
+  background: transparent url('../images/iconography/' + $file + '.png') center center no-repeat;
+  background-size: contain;
+  background-image: -webkit-linear-gradient(transparent, transparent), url('../images/iconography/' + $file + '.svg');
+  background-image: linear-gradient(transparent, transparent), url('../images/iconography/' + $file + '.svg');
+}
+
+
+
+
+// -------------------------------------
 //   Cross browser rotation
 //   https://gist.github.com/lancejpollard/519849
 // -------------------------------------
