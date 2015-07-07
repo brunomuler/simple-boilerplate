@@ -2,7 +2,8 @@
   "name": "simple-project",
   "version": "0.1.0",
   "authors": [
-    "Bruno Muller <brunohmuller@gmail.com>"
+    "Bruno Muller <brunohmuller@gmail.com>",
+    "Thiago victorino <tfvictorino@gmail.com>"
   ],
   "main": "index.html",
   "license": "MIT",
